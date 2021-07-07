@@ -106,7 +106,7 @@ class Kmeans {
     // Update clusters until there is nothing to update or max iterations
     bool test = true;
     int counter = 0;
-    while (test || counter < MAX_ITER) {
+    while (test && counter < MAX_ITER) {
       counter++;
       test = false;
       std::vector<int> num_points_per_centroid(this->k);
